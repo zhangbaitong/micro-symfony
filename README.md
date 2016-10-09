@@ -26,8 +26,9 @@ php -S 127.0.0.1:8081 -t web/ web/front.php
 click [here](http://localhost:8081/is_leap_year/2014)
 
 ## update composer autoload
+```
 composer dump-autoload
-
+```
 ## install and useage unit test
 local install:
 ```
