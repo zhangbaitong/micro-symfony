@@ -2,11 +2,18 @@
 A php micro framework based on the symfony components.
 
 ## Dependency Management
-Composer
+
+'''
+wget http://getcomposer.org/composer.phar
+php composer.phar install
+composer require symfony/http-foundation
+composer update
+'''
 
 ## run server
 php -S 127.0.0.1:8081 -t web/ web/front.php
 
+access for page[http://localhost:8081/is_leap_year/2014]
 ## update composer autoload
 composer dump-autoload
 
@@ -31,3 +38,10 @@ output html:
 output console:
 
 ./vendor/bin/phpunit --coverage-text
+
+## install xdebug for coverage
+
+'''
+brew update -v
+brew search xdebug
+brew install homebrew/php/php70-xdebug
